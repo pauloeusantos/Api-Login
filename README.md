@@ -22,7 +22,7 @@ Este é um sistema de login básico desenvolvido em Node.js utilizando Express e
 
 1. Clone o repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/pauloeusantos/Login.git
    ```
 
 2. Navegue até o diretório do projeto:
