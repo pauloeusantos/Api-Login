@@ -109,4 +109,18 @@ router.delete('/users/:id', async (req, res) => {
   }
 });
 
+// Rota para obter detalhes do usuário
+router.get('/users/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const user = await User.findByPk(id);
+    if (!user) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao buscar usuário' });
+  }
+});
+
 export default router;

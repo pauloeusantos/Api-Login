@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize"
 
 export const sequelize = new Sequelize('db', 'root', '', {
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'sqlite',
 })
 
 try {
@@ -11,3 +11,5 @@ try {
 } catch(erro) {
     console.error("Nao foi possivel conectar", erro)
 }
+
+export default sequelize
