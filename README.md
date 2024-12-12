@@ -1,6 +1,6 @@
 # Projeto de Sistema de Login
 
-Este é um sistema de login básico desenvolvido em Node.js utilizando Express e Sequelize para manipulação de banco de dados MySQL. O projeto inclui funcionalidades de registro, login, atualização e exclusão de usuários.
+Este é um sistema de login básico desenvolvido em Node.js utilizando Express e Sequelize para manipulação de banco de dados SQLite. O projeto inclui funcionalidades de registro, login, atualização e exclusão de usuários.
 
 ## Funcionalidades
 
@@ -13,8 +13,8 @@ Este é um sistema de login básico desenvolvido em Node.js utilizando Express e
 
 - **Node.js**: Plataforma de desenvolvimento.
 - **Express**: Framework web para Node.js.
-- **Sequelize**: ORM para interagir com o banco de dados MySQL.
-- **MySQL**: Banco de dados relacional.
+- **Sequelize**: ORM para interagir com o banco de dados.
+- **SQLiteL**: Banco de dados.
 - **bcryptjs**: Biblioteca para hashing de senhas.
 - **jsonwebtoken**: Biblioteca para geração de tokens JWT.
 
@@ -38,7 +38,7 @@ Este é um sistema de login básico desenvolvido em Node.js utilizando Express e
 
 4. Execute o projeto:
    ```bash
-   npm start
+   node index.js
    ```
 
 ## Uso
@@ -47,3 +47,4 @@ Este é um sistema de login básico desenvolvido em Node.js utilizando Express e
 - **Login**: `POST /users/login`
 - **Atualizar Usuário**: `PUT /users/:id`
 - **Deletar Usuário**: `DELETE /users/:id`
+
